@@ -1243,6 +1243,9 @@ animation: spinner 1s infinite linear;
   border-radius: 0px 0px 40px 40px;
   margin: 0 auto;
   text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  color: red;
 }
 
 .services-style1__single-icon:before {
@@ -2395,7 +2398,7 @@ Services Style2
 .services-style1--style2 {
   position: relative;
   display: block;
-  background: #212226;
+  background: #404040;
 }
 
 .services-style1--style2 .shape1 {
@@ -2462,6 +2465,8 @@ Services Style2
   width: 100%;
   transition: all 500ms ease;
   transform: scale(1);
+  height: 300px;
+  object-fit: cover;
 }
 
 .services-style1--style2 .services-style1__single:hover .services-style1--style2__img img {
@@ -3060,6 +3065,9 @@ Portfolio Style1
   border-radius: 20px;
   overflow: hidden;
   z-index: 1;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .events-style2__single-img .inner::before {
@@ -6384,4 +6392,10 @@ Event Details
   width: 190px;
   height: 2px;
   background: #F2F2F2;
+}
+
+.services-style1__single:hover .services-style1__single-icon i {
+    color: #fff;
+    z-index: 1;
+    position: relative;
 }
