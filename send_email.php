@@ -1,22 +1,39 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $mobile = $_POST['mobile'];
-    $message = $_POST['message'];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    // Configure your Gmail SMTP settings
-    $to = 'hitarth.parmar0412@gmail.com'; // Replace with the recipient's email address
-    $subject = 'New Contact Form Submission';
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $messageBody = "Name: $name\nEmail: $email\nMobile: $mobile\n\n$message";
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-    // Send the email using Gmail SMTP
-    if (mail($to, $subject, $messageBody, $headers)) {
-        echo 'success';
-    } else {
-        echo 'error';
-    }
+$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+try {
+    //Server settings
+    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = '156.unihost.it';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'info@example.net';                 // SMTP username
+    $mail->Password = 'MyStrongPassword!';                           // SMTP password
+    $mail->SMTPSecure = 'STARTTLS';                           
+    $mail->Port = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('hitarth.parmar@gmail.com');
+    $mail->addAddress($_POST['mail']);     // Add a recipient
+
+
+
+    //Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = $_POST['subject'];
+    $mail->Body    = $_POST['text'];
+
+    $mail->send();
+    header('Location: http://www.example.net/contact.php');
+    exit();
+} catch (Exception $e) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
 }
 ?>
