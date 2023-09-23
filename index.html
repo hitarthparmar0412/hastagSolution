@@ -1054,7 +1054,7 @@
     formData.append('email', email);
     formData.append('mobile', mobile);
     formData.append('message', message);
-
+    console.log(formData)
     fetch('send_email.php', {
         method: 'POST',
         body: formData,
