@@ -1059,6 +1059,7 @@
         method: 'POST',
         body: formData,
     })
+    console.log(formData)
     .then(response => response.text())
     .then(data => {
         if (data === 'success') {
