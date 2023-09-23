@@ -13,13 +13,13 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = '156.unihost.it';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'info@example.net';                 // SMTP username
-    $mail->Password = 'MyStrongPassword!';                           // SMTP password
+    $mail->Username = 'hitarth.parmar0412@gmail.com';                 // SMTP username
+    $mail->Password = 'hitarth@0412';                           // SMTP password
     $mail->SMTPSecure = 'STARTTLS';                           
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('hitarth.parmar@gmail.com');
+    $mail->setFrom('hitarth.parmar0412@gmail.com');
     $mail->addAddress($_POST['mail']);     // Add a recipient
 
 
