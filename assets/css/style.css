@@ -6399,3 +6399,15 @@ Event Details
     z-index: 1;
     position: relative;
 }
+
+
+.features-style2__single-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #eb292c;
+}
+.features-style2__single-icon:hover{
+  color: #fff;
+}

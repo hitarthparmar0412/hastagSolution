@@ -1,224 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HasTag Solution</title>
-    <!-- Favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HasTag Solution</title>
+  <!-- Favicons Icons -->
+<!--   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+ -->
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
 
-    <!-- fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-        rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+  <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+  <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+  <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
+  <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+  <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+  <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+  <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+  <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+  <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+  <link rel="stylesheet" href="assets/vendors/thm-icons/style.css" />
+  <!-- Module css -->
+  <link rel="stylesheet" href="assets/css/module-css/01-header-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/02-banner-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/03-about-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/04-fact-counter-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/05-testimonial-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/06-partner-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/07-footer-section.css" />
+  <link rel="stylesheet" href="assets/css/module-css/08-blog-section.css" />
+  <!-- template styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="assets/css/contact.css" /> -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
-    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
-    <link rel="stylesheet" href="assets/vendors/thm-icons/style.css">
-    <!-- Module css -->
-    <link rel="stylesheet" href="assets/css/module-css/01-header-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/02-banner-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/03-about-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/04-fact-counter-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/05-testimonial-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/06-partner-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/07-footer-section.css">
-    <link rel="stylesheet" href="assets/css/module-css/08-blog-section.css">
-    <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-
 <body>
+  <!-- Start Preloader -->
+  <div class="loader-wrap">
+    <div class="preloader">
+      <div id="handle-preloader" class="handle-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="H" class="letters-loading"> H </span>
+            <span data-text-preloader="A" class="letters-loading"> A </span>
+            <span data-text-preloader="S" class="letters-loading"> S </span>
+            <span data-text-preloader="T" class="letters-loading"> T </span>
+            <span data-text-preloader="A" class="letters-loading"> A </span>
+            <span data-text-preloader="G" class="letters-loading"> G </span>
+            <span data-text-preloader="S" class="letters-loading"> S </span>
+            <span data-text-preloader="O" class="letters-loading"> O </span>
+            <span data-text-preloader="L" class="letters-loading"> L </span>
+            <span data-text-preloader="U" class="letters-loading"> U </span>
+            <span data-text-preloader="T" class="letters-loading"> T </span>
+            <span data-text-preloader="I" class="letters-loading"> I </span>
 
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-    
-            <form action="send_email" method="POST">
-                <div class="form-group">
-                    <input type="text" name="mail" class="form-control" placeholder="Email Address">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" class="form-control" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" name="text" rows="3" placeholder="Your Message"></textarea>
-                    <button class="btn btn-default" type="submit">Send Message</button>
-                </div>
-            </form>
+            <span data-text-preloader="O" class="letters-loading"> O </span>
+            <span data-text-preloader="N" class="letters-loading"> N </span>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <!-- End Preloader -->
 
-    <!-- Start Preloader -->
-    <div class="loader-wrap">
-        <div class="preloader">
-            <div id="handle-preloader" class="handle-preloader">
-                <div class="animation-preloader">
-                    <div class="spinner"></div>
-                    <div class="txt-loading">
-                        <span data-text-preloader="H" class="letters-loading">
-                            H
-                        </span>
-                        <span data-text-preloader="A" class="letters-loading">
-                            A
-                        </span>
-                        <span data-text-preloader="S" class="letters-loading">
-                            S
-                        </span>
-                        <span data-text-preloader="T" class="letters-loading">
-                            T
-                        </span>
-                        <span data-text-preloader="A" class="letters-loading">
-                            A
-                        </span>
-                        <span data-text-preloader="G" class="letters-loading">
-                            G
-                        </span>
-                        <span data-text-preloader="S" class="letters-loading">
-                            S
-                        </span>
-                        <span data-text-preloader="O" class="letters-loading">
-                            O
-                        </span>
-                        <span data-text-preloader="L" class="letters-loading">
-                            L
-                        </span>
-                        <span data-text-preloader="U" class="letters-loading">
-                            U
-                        </span>
-                        <span data-text-preloader="T" class="letters-loading">
-                            T
-                        </span>
-                        <span data-text-preloader="I" class="letters-loading">
-                            I
-                        </span>
+  <div class="page-wrapper">
+    <!--Start Main Header One-->
+    <header class="main-header main-header-one main-header-one--two">
+      <!--Start Main Header One Top-->
+      <div class="main-header-one--two__top">
+        <div class="auto-container">
+          <div class="main-header-one--two__top-inner">
+            <div class="main-header-one--two__top-left">
+              <ul class="main-header-one--two__top-contact-info">
+                <li>
+                  <div class="icon">
+                    <span class="icon-mail-1"></span>
+                  </div>
+                  <div class="text">
+                    <p>
+                      <a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a>
+                    </p>
+                  </div>
+                </li>
 
-                        <span data-text-preloader="O" class="letters-loading">
-                            O
-                        </span>
-                        <span data-text-preloader="N" class="letters-loading">
-                            N
-                        </span>
-                        
-                    </div>
-                </div>
+                <li>
+                  <div class="icon">
+                    <span class="icon-wall-clock"></span>
+                  </div>
+                  <div class="text">
+                    <p>Open Hours: Mon - Fri 8.00 am - 6.00 pm</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="main-header-one__top-left-social-link">
+                <li>
+                  <a href="#"><span class="icon-facebook-app-symbol"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
             </div>
+
+            <div class="main-header-one--two__top-right">
+              <a class="btn-one" href="#Contact">
+                <span class="txt">Contact Us</span>
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- End Preloader -->
+      </div>
+      <!--End Main Header One Top-->
 
-
-    <div class="page-wrapper">
-
-        <!--Start Main Header One-->
-        <header class="main-header main-header-one main-header-one--two">
-            <!--Start Main Header One Top-->
-            <div class="main-header-one--two__top">
-                <div class="auto-container">
-                    <div class="main-header-one--two__top-inner">
-                        <div class="main-header-one--two__top-left">
-                            <ul class="main-header-one--two__top-contact-info">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-mail-1"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a></p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-wall-clock"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Open Hours: Mon - Fri 8.00 am - 6.00 pm</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="main-header-one__top-left-social-link">
-                                <li><a href="#"><span class="icon-facebook-app-symbol"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-
-                             
-                        </div>
-
-                        <div class="main-header-one--two__top-right">
-                            <a class="btn-one" href="#">
-                                <span class="txt">Contact Us</span>
-                            </a>
-                        </div>
-
-                    </div>
+      <!--Start Main Header One Bottom-->
+      <div class="main-header-one__bottom">
+        <nav class="main-menu main-menu-one main-menu-one--two">
+          <div class="main-menu__wrapper clearfix">
+            <div class="auto-container">
+              <div class="main-menu__wrapper-inner">
+                <div class="main-header-one__bottom-left">
+                  <div class="logo-box-one">
+                    <a href="index-2.html">
+                      <span>#</span>
+                    </a>
+                  </div>
                 </div>
-            </div>
-            <!--End Main Header One Top-->
 
-            <!--Start Main Header One Bottom-->
-            <div class="main-header-one__bottom">
+                <div class="main-header-one__bottom-right">
+                  <div class="main-menu-box">
+                    <a href="#" class="mobile-nav__toggler">
+                      <i class="fa fa-bars"></i>
+                    </a>
 
-                <nav class="main-menu main-menu-one main-menu-one--two">
-                    <div class="main-menu__wrapper clearfix">
-                        <div class="auto-container">
-                            <div class="main-menu__wrapper-inner">
+                    <ul class="main-menu__list one-page-scroll-menu">
+                      <li class="scrollToLink">
+                        <a href="#home">Home</a>
+                      </li>
+                      <li class="scrollToLink">
+                        <a href="#about">About</a>
+                      </li>
+                      <li class="scrollToLink">
+                        <a href="#services">Services</a>
+                      </li>
+                      <li class="scrollToLink">
+                        <a href="#Solution">Solution</a>
+                      </li>
 
-                                <div class="main-header-one__bottom-left">
-                                    <div class="logo-box-one">
-                                        <a href="index-2.html">
-                                            <span>#</span> 
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="main-header-one__bottom-right">
-                                    <div class="main-menu-box">
-                                        <a href="#" class="mobile-nav__toggler">
-                                            <i class="fa fa-bars"></i>
-                                        </a>
-
-                                        <ul class="main-menu__list one-page-scroll-menu">
-                                            <li class="scrollToLink">
-                                                <a href="#home">Home</a>
-                                            </li>
-                                            <li class="scrollToLink">
-                                                <a href="#about">About</a>
-                                            </li>
-                                            <li class="scrollToLink">
-                                                <a href="#services">Services</a>
-                                            </li>
-                                            <li class="scrollToLink">
-                                                <a href="#Solution">Solution</a>
-                                            </li>
-                                            
-                                            <li class="scrollToLink">
-                                                <a href="blog-grid.html">Blog</a>
-                                            </li>
-                                            <li class="scrollToLink">
-                                                <a href="#team">Contact Us</a>
-                                            </li>
-                                       <!--      <li class="dropdown">
+                      <li class="scrollToLink">
+                        <a href="blog-grid.html">Blog</a>
+                      </li>
+                      <li class="scrollToLink">
+                        <a href="#Contact">Contact Us</a>
+                      </li>
+                      <!--      <li class="dropdown">
                                                 <a href="#">Pages</a>
                                                 <ul>
                                                     <li><a href="index-2.html">Home Page 01</a></li>
@@ -227,11 +183,10 @@
                                                     <li><a href="index-dark.html">Home Dark</a></li>
                                                 </ul>
                                             </li> -->
-                                        </ul>
+                    </ul>
+                  </div>
 
-                                    </div>
-
-                                <!--     <div class="main-header-one__bottom-right-number">
+                  <!--     <div class="main-header-one__bottom-right-number">
                                         <div class="icon">
                                             <span class="icon-headphones"></span>
                                         </div>
@@ -241,25 +196,25 @@
                                         </div>
                                     </div>
  -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                </div>
+              </div>
             </div>
-            <!--End Main Header One Bottom-->
+          </div>
+        </nav>
+      </div>
+      <!--End Main Header One Bottom-->
+    </header>
+    <!--End Main Header One-->
 
-        </header>
-        <!--End Main Header One-->
+    <div class="stricky-header stricked-menu main-menu main-menu-one--two">
+      <div class="sticky-header__content"></div>
+      <!-- /.sticky-header__content -->
+    </div>
+    <!-- /.stricky-header -->
 
-        <div class="stricky-header stricked-menu main-menu main-menu-one--two">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
-
-
-        <!--Start Main Slider -->
-        <section class="main-slider main-slider-one main-slider-one--two" id="home">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+    <!--Start Main Slider -->
+    <section class="main-slider main-slider-one main-slider-one--two" id="home">
+      <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
                 "effect": "fade",
                 "pagination": {
                 "el": "#main-slider-pagination",
@@ -273,169 +228,192 @@
                 "autoplay": {
                 "delay": 5000
                 }}'>
-                <div class="swiper-wrapper">
-
-
-                    <!--Start Single Swiper Slide-->
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(assets/images/slides/web.jpg);">
-                        </div>
-                        <div class="auto-container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider-one__content">
-                                        <div class="title">
-                                            <h2>Web app <br> <span>development</span></h2>
-                                        </div>
-                                        <div class="btn-box">
-                                            <a class="btn-one" href="#">
-                                                <span class="txt">Get in touch</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Swiper Slide-->
-
-                    <!--Start Single Swiper Slide-->
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(assets/images/slides/app.jpg);">
-                        </div>
-                        <div class="auto-container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider-one__content">
-                                        <div class="title">
-                                            <h2>Android  app<br> <span>Development</span></h2>
-                                        </div>
-                                        <div class="btn-box">
-                                            <a class="btn-one" href="#">
-                                                <span class="txt">Get in touch</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Swiper Slide-->
-
-                    <!--Start Single Swiper Slide-->
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url(assets/images/slides/ios.jpg);">
-                        </div>
-                        <div class="auto-container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider-one__content">
-                                        <div class="title">
-                                            <h2>IOS  app<br> <span>Development</span></h2>
-                                        </div>
-                                    
-                                        <div class="btn-box">
-                                            <a class="btn-one" href="#">
-                                                <span class="txt">Get in touch</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Swiper Slide-->
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="main-slider__nav main-slider__nav--two">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
-                        <i class="icon-left-arrow-1"></i>
-                    </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
-                        <i class="icon-next"></i>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--End Main Slider-->
-
-
-        <!--Start Features Style2-->
-        <section class="features-style2">
+        <div class="swiper-wrapper">
+          <!--Start Single Swiper Slide-->
+          <div class="swiper-slide">
+            <div class="image-layer" style="background-image: url(assets/images/slides/web.jpg)"></div>
             <div class="auto-container">
-                <div class="features-style2__inner">
-                    <div class="shape1"><img src="assets/images/shapes/features-v2-shape1.png" alt="#"></div>
-                    <ul class="clearfix">
-                        <!--Start Features Style1 Single-->
-                        <li class="features-style2__single text-center">
-                            <div class="features-style2__single-icon">
-                                <span class="icon-Group-3"></span>
-                            </div>
-
-                            <div class="features-style2__single-content">
-                                <h3><a href="#">Web <br> Development</a></h3>
-                                <p>Creating digital masterpieces, one website at a time.</p>
-                            </div>
-                        </li>
-                        <!--End Features Style1 Single-->
-
-                        <!--Start Features Style1 Single-->
-                        <li class="features-style2__single text-center">
-                            <div class="features-style2__single-icon">
-                                <span class="icon-Group-1"></span>
-                            </div>
-
-                            <div class="features-style2__single-content">
-                                <h3><a href="#">App <br> Development</a></h3>
-                                <p>Unleashing the power of innovation through stunning mobile apps.</p>
-                            </div>
-                        </li>
-                        <!--End Features Style1 Single-->
-
-                        <!--Start Features Style1 Single-->
-                        <li class="features-style2__single text-center">
-                            <div class="features-style2__single-icon">
-                                <span class="icon-Group-2"></span>
-                            </div>
-
-                            <div class="features-style2__single-content">
-                                <h3><a href="#">Digital <br> Marketing</a></h3>
-                                <p>Driving your online success with strategic digital campaigns</p>
-                            </div>
-                        </li>
-                        <!--End Features Style1 Single-->
-
-                        <!--Start Features Style1 Single-->
-                        <li class="features-style2__single text-center">
-                            <div class="features-style2__single-icon">
-                                <span class="icon-Group-4"></span>
-                            </div>
-
-                            <div class="features-style2__single-content">
-                                <h3><a href="#">Search engine <br> optimization</a></h3>
-                                <p>Skyrocketing your online visibility to new heights.</p>
-                            </div>
-                        </li>
-                        <!--End Features Style1 Single-->
-                    </ul>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="main-slider-one__content">
+                    <div class="title">
+                      <h2>
+                        Web app <br />
+                        <span>development</span>
+                      </h2>
+                    </div>
+                    <div class="btn-box">
+                      <a class="btn-one" href="#">
+                        <span class="txt">Get in touch</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!--End Features Style2-->
+          </div>
+          <!--End Single Swiper Slide-->
 
-        <!--Start About Style2-->
-        <section class="about-style2" id="about">
+          <!--Start Single Swiper Slide-->
+          <div class="swiper-slide">
+            <div class="image-layer" style="background-image: url(assets/images/slides/app.jpg)"></div>
             <div class="auto-container">
-                <div class="row">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="main-slider-one__content">
+                    <div class="title">
+                      <h2>
+                        Android app<br />
+                        <span>Development</span>
+                      </h2>
+                    </div>
+                    <div class="btn-box">
+                      <a class="btn-one" href="#">
+                        <span class="txt">Get in touch</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Single Swiper Slide-->
 
-                    <div class="col-xl-6">
-                        <div class="about-style2__img">
-                            <div class="shape1 rotate-me"><img src="assets/images/shapes/thm-shape1.png" alt="#"></div>
-                            <div class="shape2 float-bob-y"><img src="assets/images/shapes/thm-shape1.png" alt="#">
-                            </div>
-                           <!--  <div class="about-style2__img-video-box text-center">
+          <!--Start Single Swiper Slide-->
+          <div class="swiper-slide">
+            <div class="image-layer" style="background-image: url(assets/images/slides/ios.jpg)"></div>
+            <div class="auto-container">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="main-slider-one__content">
+                    <div class="title">
+                      <h2>
+                        IOS app<br />
+                        <span>Development</span>
+                      </h2>
+                    </div>
+
+                    <div class="btn-box">
+                      <a class="btn-one" href="#">
+                        <span class="txt">Get in touch</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Single Swiper Slide-->
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="main-slider__nav main-slider__nav--two">
+          <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+            <i class="icon-left-arrow-1"></i>
+          </div>
+          <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+            <i class="icon-next"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Main Slider-->
+
+    <!--Start Features Style2-->
+    <section class="features-style2">
+      <div class="auto-container">
+        <div class="features-style2__inner">
+          <div class="shape1">
+            <img src="assets/images/shapes/features-v2-shape1.png" alt="#" />
+          </div>
+          <ul class="clearfix">
+            <!--Start Features Style1 Single-->
+            <li class="features-style2__single text-center">
+              <div class="features-style2__single-icon">
+                <i class="fas fa-laptop icon"></i>
+              </div>
+
+              <div class="features-style2__single-content">
+                <h3>
+                  <a href="#">Web <br />
+                    Development</a>
+                </h3>
+                <p>Creating digital masterpieces, one website at a time.</p>
+              </div>
+            </li>
+            <!--End Features Style1 Single-->
+
+            <!--Start Features Style1 Single-->
+            <li class="features-style2__single text-center">
+              <div class="features-style2__single-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+
+              <div class="features-style2__single-content">
+                <h3>
+                  <a href="#">App <br />
+                    Development</a>
+                </h3>
+                <p>
+                  Unleashing the power of innovation through stunning mobile
+                  apps.
+                </p>
+              </div>
+            </li>
+            <!--End Features Style1 Single-->
+
+            <!--Start Features Style1 Single-->
+            <li class="features-style2__single text-center">
+              <div class="features-style2__single-icon">
+                 <i class="fa-solid fa-chart-simple"></i>
+              </div>
+
+              <div class="features-style2__single-content">
+                <h3>
+                  <a href="#">Digital <br />
+                    Marketing</a>
+                </h3>
+                <p>
+                  Driving your online success with strategic digital campaigns
+                </p>
+              </div>
+            </li>
+            <!--End Features Style1 Single-->
+
+            <!--Start Features Style1 Single-->
+            <li class="features-style2__single text-center">
+              <div class="features-style2__single-icon">
+                  <i class="fas fa-search icon"></i>
+              </div>
+
+              <div class="features-style2__single-content">
+                <h3>
+                  <a href="#">Search engine <br />
+                    optimization</a>
+                </h3>
+                <p>Skyrocketing your online visibility to new heights.</p>
+              </div>
+            </li>
+            <!--End Features Style1 Single-->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--End Features Style2-->
+
+    <!--Start About Style2-->
+    <section class="about-style2" id="about">
+      <div class="auto-container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="about-style2__img">
+              <div class="shape1 rotate-me">
+                <img src="assets/images/shapes/thm-shape1.png" alt="#" />
+              </div>
+              <div class="shape2 float-bob-y">
+                <img src="assets/images/shapes/thm-shape1.png" alt="#" />
+              </div>
+              <!--  <div class="about-style2__img-video-box text-center">
                                 <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
                                     <div class="about-style2__img-video-box-icon">
                                         <span class="icon-play-1"></span>
@@ -446,294 +424,319 @@
                                     <h3>Watch Leader <br> Talk</h3>
                                 </div>
                             </div> -->
-                            <div class="inner">
-                                <img src="assets/images/about/about.jpg" alt="#">
-                            </div>
-                            <div class="about-style2__experience-box">
-                                <h2>
-                                    <span class="odometer" data-count="5"></span>
-                                </h2>
-                                <div class="title">
-                                    <h3> Years <br> Of Experience</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xl-6">
-                        <div class="about-style2__content">
-                            <div class="sec-title">
-                                <div class="sub-title">
-                                    <h6>About HasTag</h6>
-                                </div>
-                                <h2>We are support  To<br> Grow your  business</h2>
-                            </div>
-                            <div class="about-style2__content-text">
-                                <p>Empowering Your Business Growth: We're here to support you every step of the way. Unlock your full potential with our tailored solutions and expert guidance. Take your business to new heights with confidence, backed by our dedicated support.</p>
-                            </div>
-
-                            <div class="about-style2__content-bottom">
-                                <div class="inner">
-                                    <ul>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Grow your Buisness</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Quick solutions for daily problems</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-check"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Community that grows larger</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                
-                                </div>
-                                <div class="btn-box">
-                                    <a class="btn-one" href="javascript:void(0)">
-                                        <span class="txt">Get in touch</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="inner">
+                <img src="assets/images/about/about.jpg" alt="#" />
+              </div>
+              <div class="about-style2__experience-box">
+                <h2>
+                  <span class="odometer" data-count="5"></span>
+                </h2>
+                <div class="title">
+                  <h3>
+                    Years <br />
+                    Of Experience
+                  </h3>
                 </div>
+              </div>
             </div>
-        </section>
-        <!--End About Style2-->
+          </div>
 
-        <!--Start Services Style1-->
-        <section class="services-style1 services-style1--style2" id="services">
-            <div class="shape1"></div>
-            <div class="shape2 rotate-me"><img src="assets/images/shapes/services-v2-shape1.png" alt="#"></div>
-            <div class="shape3 float-bob-y"><img src="assets/images/shapes/services-v2-shape2.png" alt="#"></div>
-            <div class="auto-container">
-                <div class="sec-title text-center">
-                    <div class="sub-title">
-                        <h6>Services</h6>
-                    </div>
-                    <h2>Our Services</h2>
+          <div class="col-xl-6">
+            <div class="about-style2__content">
+              <div class="sec-title">
+                <div class="sub-title">
+                  <h6>About HasTag</h6>
                 </div>
-                <div class="row">
-                    <!--Start Services Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="services-style1__single">
-                            <div class="services-style1--style2__img">
-                                <img src="assets/images/services/web.jpg" alt="#">
-                            </div>
-                            <div class="services-style1__single-content text-center">
-                                <div class="services-style1__single-icon">
-                                    <i class="fa-solid fa-globe"></i>
-                                </div>
-                                <div class="services-style1__single-text">
-                                    <h3><a href="departments-details.html"> Web <br> Development</a></h3>
+                <h2>
+                  We are support To<br />
+                  Grow your business
+                </h2>
+              </div>
+              <div class="about-style2__content-text">
+                <p>
+                  Empowering Your Business Growth: We're here to support you
+                  every step of the way. Unlock your full potential with our
+                  tailored solutions and expert guidance. Take your business
+                  to new heights with confidence, backed by our dedicated
+                  support.
+                </p>
+              </div>
 
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Services Style1 Single-->
+              <div class="about-style2__content-bottom">
+                <div class="inner">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <span class="icon-check"></span>
+                      </div>
+                      <div class="text">
+                        <p>Grow your Buisness</p>
+                      </div>
+                    </li>
 
-                    <!--Start Services Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
-                        <div class="services-style1__single">
-                            <div class="services-style1--style2__img">
-                                <img src="assets/images/services/app.jpg" alt="#">
-                            </div>
-                            <div class="services-style1__single-content text-center">
-                                <div class="services-style1__single-icon">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                </div>
-                                <div class="services-style1__single-text">
-                                    <h3><a href="departments-details.html"> App <br> Development</a></h3>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Services Style1 Single-->
+                    <li>
+                      <div class="icon">
+                        <span class="icon-check"></span>
+                      </div>
+                      <div class="text">
+                        <p>Quick solutions for daily problems</p>
+                      </div>
+                    </li>
 
-                    <!--Start Services Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="services-style1__single">
-                            <div class="services-style1--style2__img">
-                                <img src="assets/images/services/marketing.jpg" alt="#">
-                            </div>
-                            <div class="services-style1__single-content text-center">
-                                <div class="services-style1__single-icon">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                </div>
-                                <div class="services-style1__single-text">
-                                    <h3><a href="departments-details.html"> Digital <br> Marketing</a></h3>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Services Style1 Single-->
+                    <li>
+                      <div class="icon">
+                        <span class="icon-check"></span>
+                      </div>
+                      <div class="text">
+                        <p>Community that grows larger</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
+                <div class="btn-box">
+                  <a class="btn-one" href="javascript:void(0)">
+                    <span class="txt">Get in touch</span>
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
-        <!--End Services Style1-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End About Style2-->
 
-
-        <!--Start Instant Services Style1-->
-        <section class="instant-services-style1 instant-services-style1--style2 py-5" id="Solution">
-            <div class="shape1 float-bob-y"><img src="assets/images/shapes/thm-shape1.png" alt="#"></div>
-            <div class="instant-services-style1--style2__bg"></div>
-            <div class="auto-container">
-                <div class="row">
-                    <!--Start Instant Services Style1 Img-->
-                    <div class="col-xl-4">
-                        <div class="instant-services-style1--style2__title">
-                            <div class="sec-title">
-                                <div class="sub-title">
-                                    <h6>Solutions</h6>
-                                </div>
-                                <h2>Quick Solution <br> for your <br> Business</h2>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--End Instant Services Style1 Img-->
-
-                    <!--Start Instant Services Style1 Content-->
-                    <div class="col-xl-8">
-                        <div class="instant-services-style1__content">
-                            <div class="shape2 float-bob-y"><img
-                                    src="assets/images/shapes/instant-services-v2-shape1.png" alt="#">
-                            </div>
-                            <div class="instant-services-style1__content-bottom">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="instant-services-style1__content-bottom-single">
-                                            <ul>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">E-commerce solution</a>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">Hotel JetBrains Mono management </a>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">Hospital management</a>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">Cab booking system</a>
-                                                    </div>
-                                                </li>
-
-                                              
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="instant-services-style1__content-bottom-single">
-                                            <ul>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">Degital marketing</a>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">SEO</a>
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">Social media marketing</a>
-                                                    </div>
-                                                </li>
-
-                                                 <li>
-                                                    <div class="icon">
-                                                        <span class="icon-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">Custome Software solution</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Instant Services Style1 Content-->
+    <!--Start Services Style1-->
+    <section class="services-style1 services-style1--style2" id="services">
+      <div class="shape1"></div>
+      <div class="shape2 rotate-me">
+        <img src="assets/images/shapes/services-v2-shape1.png" alt="#" />
+      </div>
+      <div class="shape3 float-bob-y">
+        <img src="assets/images/shapes/services-v2-shape2.png" alt="#" />
+      </div>
+      <div class="auto-container">
+        <div class="sec-title text-center">
+          <div class="sub-title">
+            <h6>Services</h6>
+          </div>
+          <h2>Our Services</h2>
+        </div>
+        <div class="row">
+          <!--Start Services Style1 Single-->
+          <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="services-style1__single">
+              <div class="services-style1--style2__img">
+                <img src="assets/images/services/web.jpg" alt="#" />
+              </div>
+              <div class="services-style1__single-content text-center">
+                <div class="services-style1__single-icon">
+                  <i class="fa-solid fa-globe"></i>
                 </div>
+                <div class="services-style1__single-text">
+                  <h3>
+                    <a href="departments-details.html">
+                      Web <br />
+                      Development</a>
+                  </h3>
+                </div>
+              </div>
             </div>
-        </section>
-        <!--End Instant Services Style1-->
- 
-        <!--Start Testimonials Style1-->
-    
-        <!--End Testimonials Style1-->
+          </div>
+          <!--End Services Style1 Single-->
 
-        
-        <!--Start Events-style2-->
-        <section class="events-style2" id="Blog"> 
-            <div class="auto-container">
-                <div class="sec-title text-center">
-                    <div class="sub-title">
-                        <h6>Blog</h6>
-                    </div>
-                    <h2>HasTag Blog</h2>
+          <!--Start Services Style1 Single-->
+          <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
+            <div class="services-style1__single">
+              <div class="services-style1--style2__img">
+                <img src="assets/images/services/app.jpg" alt="#" />
+              </div>
+              <div class="services-style1__single-content text-center">
+                <div class="services-style1__single-icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
+                <div class="services-style1__single-text">
+                  <h3>
+                    <a href="departments-details.html">
+                      App <br />
+                      Development</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Services Style1 Single-->
+
+          <!--Start Services Style1 Single-->
+          <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="services-style1__single">
+              <div class="services-style1--style2__img">
+                <img src="assets/images/services/marketing.jpg" alt="#" />
+              </div>
+              <div class="services-style1__single-content text-center">
+                <div class="services-style1__single-icon">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="services-style1__single-text">
+                  <h3>
+                    <a href="departments-details.html">
+                      Digital <br />
+                      Marketing</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Services Style1 Single-->
+        </div>
+      </div>
+    </section>
+    <!--End Services Style1-->
+
+    <!--Start Instant Services Style1-->
+    <section class="instant-services-style1 instant-services-style1--style2 py-5" id="Solution">
+      <div class="shape1 float-bob-y">
+        <img src="assets/images/shapes/thm-shape1.png" alt="#" />
+      </div>
+      <div class="instant-services-style1--style2__bg"></div>
+      <div class="auto-container">
+        <div class="row">
+          <!--Start Instant Services Style1 Img-->
+          <div class="col-xl-4">
+            <div class="instant-services-style1--style2__title">
+              <div class="sec-title">
+                <div class="sub-title">
+                  <h6>Solutions</h6>
+                </div>
+                <h2>
+                  Quick Solution <br />
+                  for your <br />
+                  Business
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!--End Instant Services Style1 Img-->
+
+          <!--Start Instant Services Style1 Content-->
+          <div class="col-xl-8">
+            <div class="instant-services-style1__content">
+              <div class="shape2 float-bob-y">
+                <img src="assets/images/shapes/instant-services-v2-shape1.png" alt="#" />
+              </div>
+              <div class="instant-services-style1__content-bottom" id="Contact">
                 <div class="row">
-                    <!--Start Events Style2 Single-->
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="instant-services-style1__content-bottom-single">
+                      <ul>
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">E-commerce solution</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">Hotel management </a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">Hospital management</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">Cab booking system</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="instant-services-style1__content-bottom-single">
+                      <ul>
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">Degital marketing</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">SEO</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">Social media marketing</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="icon">
+                            <span class="icon-check-mark"></span>
+                          </div>
+                          <div class="text">
+                            <a href="#">Custome Software solution</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Instant Services Style1 Content-->
+        </div>
+      </div>
+    </section>
+    <!--End Instant Services Style1-->
+
+    <!--Start Testimonials Style1-->
+
+    <!--End Testimonials Style1-->
+
+    <!--Start Events-style2-->
+    <section class="events-style2" id="Blog">
+      <div class="auto-container">
+        <div class="sec-title text-center">
+          <div class="sub-title">
+            <h6>Blog</h6>
+          </div>
+          <h2>HasTag Blog</h2>
+        </div>
+        <div class="row" id="blogsContainer">
+          <!-- Blog content will be added here -->
+        </div>
+        <!-- <div class="row">
+                    Start Events Style2 Single
                     <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s">
                         <div class="events-style2__single">
                             <div class="events-style2__single-img">
@@ -756,167 +759,351 @@
                             </div>
                         </div>
                     </div>
-                    <!--End Events Style2 Single-->
+                    End Events Style2 Single
+                </div> -->
+      </div>
+    </section>
+    <!--Start Instant Services Style1-->
+    <section class="instant-services-style1 instant-services-style1--style2 py-5" id="Contact">
+      <div class="shape1 float-bob-y">
+        <img src="assets/images/shapes/thm-shape1.png" alt="#" />
+      </div>
+      <div class="instant-services-style1--style2__bg"></div>
+      <div class="auto-container">
+        <div class="row">
+          <!--Start Instant Services Style1 Img-->
+          <!--End Instant Services Style1 Img-->
 
-                    <!--Start Events Style2 Single-->
-                    <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.3s">
-                        <div class="events-style2__single">
-                            <div class="events-style2__single-img">
-                                <div class="inner">
-                                    <img src="assets/images/resources/qc.jpg" alt="#">
-                                </div>
-                                <div class="date-box">
-                                    <p><span class="icon-calendar-1"></span>Apr 17, 2023</p>
-                                </div>
-                            </div>
-
-                            <div class="events-style2__single-content text-center">
-                                <h2><a href="javascript:void(0)">Quantum Computing</a>
-                                </h2>
-                                <div class="events-style2__single-btn">
-                                    <a class="btn-one" href="javascript:void(0)">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+          <!--Start Instant Services Style1 Content-->
+          <!-- conact us form fluid start -->
+          <!-- <div class="rts-contact-form-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="rts-contact-fluid rts-section-gap">
+                      <div class="rts-title-area contact-fluid text-center mb--50">
+                          <p class="pre-title">
+                              Get In Touch
+                          </p>
+                          <h2 class="title">Needs Help? Let’s Get in Touch</h2>
+                      </div>
+                      <div class="form-wrapper">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+          <!-- conact us form fluid end -->
+          <div class="col-xl-12">
+            <div class="instant-services-style1__content">
+              <div class="shape2 float-bob-y">
+                <img src="assets/images/shapes/instant-services-v2-shape1.png" alt="#" />
+              </div>
+              <div class="instant-services-style1__content-bottom">
+                <div style="width: 100%;">
+                  <div class="sec-title" style="text-align: center;">
+                    <div class="sub-title">
+                      <h6>
+                        Get In Touch
+                      </h6>
                     </div>
-                    <!--End Events Style2 Single-->
+                    <h2>
 
-                    <!--Start Events Style2 Single-->
-                    <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.5s">
-                        <div class="events-style2__single">
-                            <div class="events-style2__single-img">
-                                <div class="inner">
-                                    <img src="assets/images/resources/iot.png" alt="#">
-                                </div>
-                                <div class="date-box">
-                                    <p><span class="icon-calendar-1"></span>Apr 17, 2023</p>
-                                </div>
-                            </div>
 
-                            <div class="events-style2__single-content text-center">
-                                <h2><a href="javascript:void(0)">Internet of Things (IoT)</a></h2>
-                                
-                                <div class="events-style2__single-btn">
-                                    <a class="btn-one" href="javascript:void(0)">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Events Style2 Single-->
+                      Needs Help? Let’s Get in Touch
+
+                    </h2></br>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <!--End Events-style2-->
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="instant-services-style1__content-bottom-single">
+                      <ul>
+                        <li>
+                          <div class="add-comment-box">
+                            <form id="add-comment-form" action="#">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="input-box">
+                                    <input type="text" name="fname" value="" placeholder="Your name">
+                                    <p id="fname-error" style="color:#EB292C"></p>
+                                  </div>
 
-     
-
-        
- 
-
-       
-        <!--Start footer area -->
-        <footer class="footer-area">
-            <div class="footer-area__shape1">
-                <img src="assets/images/shapes/footer-v1-shape1.png" alt="#">
-            </div>
-            <!--Start Footer-->
-            <div class="footer">
-                <div class="auto-container">
-                    <div class="row">
-                        <!--Start single footer widget-->
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
-                            <div class="single-footer-widget">
-                                <div class="our-company-info">
-                                    <div class="footer-logo-style1">
-                                            <div class="title">HasTag Solution</div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-box">
+                                    <input type="text" name="mnumber" value="" placeholder="Your Number">
+                                    <p id="mnumber-error" style="color:#EB292C"></p>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-box">
+                                    <input type="email" name="femail" value="" placeholder="Your email">
+                                    <p class="error-message" id="femail-error" style="color:#EB292C;"></p>
+                                    <p id="femail-error" style="color:#EB292C"></p>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-box">
+                                    <input type="text" name="fsubject" value="" placeholder="Your Subject">
+                                    <p id="fsubject-error" style="color:#EB292C"></p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-12">
+                                  <div class="row">
+                                    <div class="col-xl-12">
+                                      <div class="input-box">
+                                        <textarea name="fcomments" placeholder="Type message"></textarea>
+                                        <p id="fcomments-error" style="color:#EB292C"></p>
+                                      </div>
                                     </div>
-
-                                    <ul class="our-company-info__social-link">
-                                        <!-- <div class="title mb-3">Social link</div> -->
-                                        <li>
-                                            <a href="#"><span class="icon-facebook-app-symbol"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-twitter"></span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                        </li>
-                                    </ul>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="button-box">
+                                        <button class="btn-one" type="button" onclick="validateForm()">
+                                          <span class="txt">Send</span>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!--End single footer widget-->
+                              </div>
+                            </form>
+
+                          </div>
+
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Instant Services Style1 Content-->
+        </div>
+      </div>
+    </section>
+
+    <div id="toast">
+      <!-- <div id="img">Icon</div> -->
+      <div id="desc">Your content massage send successfully</div>
+    </div>
+    <!--End Instant Services Style1-->
+    <script>
+      function validateForm(event) {
+        // event.preventDefault(); // Prevents the default form submission
+
+        // Fetch form elements
+        const fname = document.querySelector('input[name="fname"]');
+        const mnumber = document.querySelector('input[name="mnumber"]');
+        const femail = document.querySelector('input[name="femail"]');
+        const fsubject = document.querySelector('input[name="fsubject"]');
+
+        const fcomments = document.querySelector('textarea[name="fcomments"]');
+
+        // Reset previous error styles
+        const errorFields = document.querySelectorAll('.error');
+        errorFields.forEach(field => {
+          field.classList.remove('error');
+        });
+
+        // Reset previous error messages
+        const errorMessages = document.querySelectorAll('.error-message');
+        errorMessages.forEach(message => {
+          message.innerText = '';
+        });
+
+        // Perform validation
+        if (fname.value.trim() === '') {
+          fname.classList.add('error');
+          document.getElementById('fname-error').innerText = 'Please enter your name';
+          fname.style.border = '2px solid #EB292C';
+
+        }
+        if (mnumber.value.trim() === '') {
+          mnumber.classList.add('error');
+          document.getElementById('mnumber-error').innerText = 'Please enter your number';
+          mnumber.style.border = '2px solid #EB292C';
+
+        }
+        else if (!isValidMobileNumber(mnumber.value.trim())) {
+          mnumber.classList.add('error');
+          document.getElementById('mnumber-error').innerText = 'Please enter a valid mobile number';
+          mnumber.style.border = '2px solid #EB292C';
+
+        }
+        if (fsubject.value.trim() === '') {
+          fsubject.classList.add('error');
+          document.getElementById('fsubject-error').innerText = 'Please enter your subject';
+          fsubject.style.border = '2px solid #EB292C';
+
+        }
+        if (femail.value.trim() === '') {
+          femail.classList.add('error');
+          document.getElementById('femail-error').innerText = 'Please enter your email';
+          femail.style.border = '2px solid #EB292C';
+
+        }
+        if (fcomments.value.trim() === '') {
+          fcomments.classList.add('error');
+          document.getElementById('fcomments-error').innerText = 'Please enter your message';
+          fcomments.style.border = '2px solid #EB292C';
+
+        }
+
+        // Check if any field is empty
+        if (fname.value.trim() === '' || mnumber.value.trim() === '' || femail.value.trim() === '' || fcomments.value.trim() === '') {
+          return;
+        }
+
+        // If all fields are filled, log the data to the console
+        fname.style.border = '1px solid #E5E5E5';
+        mnumber.style.border = '1px solid #E5E5E5';
+        femail.style.border = '1px solid #E5E5E5';
+        fcomments.style.border = '1px solid #E5E5E5';
+        let data = { name: fname.value, mobileNumber: mnumber.value, email: femail.value, comments: fcomments.value }
+        //console.log('Form Data:');
+        //console.log('Name:', fname.value);
+        //console.log('Number:', mnumber.value);
+        //console.log('Email:', femail.value);
+        //console.log('Comments:', fcomments.value);
+        axios
+          .post("https://hastag-admin-default-rtdb.firebaseio.com/contacts.json",
+            data
+
+          )
+          .then((response) => {
+            if (response.status === 200) {
+              launch_toast()
+            }
+
+          })
+          .catch((error) => {
+            console.error("Error fetching blog data:", error);
+          });
+
+        // You can submit the form here if needed:
+        // document.getElementById('add-comment-form').submit();
+      }
+      function isValidMobileNumber(number) {
+        // Regular expression for mobile number validation
+        const mobileNumberPattern = /^[0-9]{10}$/; // Modify this pattern according to your country's mobile number format
+        return mobileNumberPattern.test(number);
+      }
+
+      function launch_toast() {
+        var x = document.getElementById("toast")
+        x.className = "show";
+        setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
+      }
+    </script>
 
 
-                        <!--Start single footer widget-->
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
-                            <div class="single-footer-widget single-footer-widget--explore">
-                                <div class="title">
-                                    <h3>Services</h3>
-                                </div>
-                                <div class="footer-widget-links">
-                                    <ul>
-                                        <li><a href="#">Web Development</a></li>
-                                        <li><a href="#">App Development</a></li>
-                                        <li><a href="#">Digital Marketing</a></li>
-                                        <li><a href="#">SEO</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single footer widget-->
+    <!--End Events-style2-->
 
-                        <!--Start single footer widget-->
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
-                            <div class="single-footer-widget single-footer-widget--links">
-                                <div class="title">
-                                    <h3>Explore</h3>
-                                </div>
-                                <div class="footer-widget-links">
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="blog-grid.html">Blog</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single footer widget-->
+    <!--Start footer area -->
+    <footer class="footer-area">
+      <div class="footer-area__shape1">
+        <img src="assets/images/shapes/footer-v1-shape1.png" alt="#" />
+      </div>
+      <!--Start Footer-->
+      <div class="footer">
+        <div class="auto-container">
+          <div class="row">
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
+              <div class="single-footer-widget">
+                <div class="our-company-info">
+                  <div class="footer-logo-style1">
+                    <div class="title">HasTag Solution</div>
+                  </div>
 
-                        <!--Start single footer widget-->
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
-                            <div class="single-footer-widget footer-widget--contact">
-                                <div class="title">
-                                    <h3>Contact</h3>
-                                </div>
-                                <div class="footer-widget--contact-info">
-                                    <ul>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-pin"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Ahmedabad, Gujarat, India.</p>
-                                            </div>
-                                        </li>
+                  <ul class="our-company-info__social-link">
+                    <!-- <div class="title mb-3">Social link</div> -->
+                    <li>
+                      <a href="#"><span class="icon-facebook-app-symbol"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-twitter"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon-instagram"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End single footer widget-->
 
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-mail-1"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p><a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a></p>
-                                            </div>
-                                        </li>
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
+              <div class="single-footer-widget single-footer-widget--explore">
+                <div class="title">
+                  <h3>Services</h3>
+                </div>
+                <div class="footer-widget-links">
+                  <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">SEO</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End single footer widget-->
 
-                                        <!-- <li>
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
+              <div class="single-footer-widget single-footer-widget--links">
+                <div class="title">
+                  <h3>Explore</h3>
+                </div>
+                <div class="footer-widget-links">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="blog-grid.html">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End single footer widget-->
+
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
+              <div class="single-footer-widget footer-widget--contact">
+                <div class="title">
+                  <h3>Contact</h3>
+                </div>
+                <div class="footer-widget--contact-info">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <span class="icon-pin"></span>
+                      </div>
+                      <div class="text">
+                        <p>Ahmedabad, Gujarat, India.</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="icon">
+                        <span class="icon-mail-1"></span>
+                      </div>
+                      <div class="text">
+                        <p>
+                          <a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a>
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- <li>
                                             <div class="icon">
                                                 <span class="icon-telephone"></span>
                                             </div>
@@ -924,17 +1111,17 @@
                                                 <p><a href="tel:3336660000">333 666 0000</a></p>
                                             </div>
                                         </li> -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single footer widget-->
-                    </div>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <!--End Footer-->
+            <!--End single footer widget-->
+          </div>
+        </div>
+      </div>
+      <!--End Footer-->
 
-           <!--  <div class="footer-bottom">
+      <!--  <div class="footer-bottom">
                 <div class="container">
                     <div class="bottom-inner text-center">
                         <div class="copyright">
@@ -943,92 +1130,151 @@
                     </div>
                 </div>
             </div> -->
+    </footer>
+    <!--End footer area-->
+  </div>
+  <!-- /.page-wrapper -->
 
-        </footer>
-        <!--End footer area-->
-
+  <div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <div class="mobile-nav__content">
+      <span class="mobile-nav__close mobile-nav__toggler">
+        <i class="icon-plus"></i>
+      </span>
+      <div class="logo-box">
+        <a href="index-2.html" aria-label="logo image"> # </a>
+      </div>
+      <div class="mobile-nav__container"></div>
+      <ul class="mobile-nav__contact list-unstyled">
+        <li>
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a>
+        </li>
+      </ul>
+      <div class="mobile-nav__social">
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-facebook-square"></a>
+        <a href="#" class="fab fa-pinterest-p"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
     </div>
-    <!-- /.page-wrapper -->
+  </div>
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler">
-                <i class="icon-plus"></i>
-            </span>
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image">
-                    #
-                </a>
+  <div class="search-popup">
+    <div class="search-popup__overlay search-toggler"></div>
+    <div class="search-popup__content">
+      <form action="#">
+        <label for="search" class="sr-only">search here</label>
+        <input type="text" id="search" placeholder="Search Here..." />
+        <button type="submit" aria-label="search submit" class="thm-btn">
+          <i class="icon-search-1"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+    <i class="icon-down-arrow"></i>
+  </a>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+  <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+  <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+  <script src="assets/vendors/isotope/isotope.js"></script>
+  <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+  <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="assets/vendors/jquery-migrate/jquery-migrate.min.js"></script>
+  <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+  <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+  <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+  <script src="assets/vendors/odometer/odometer.min.js"></script>
+  <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendors/parallax/parallax.min.js"></script>
+  <script src="assets/vendors/swiper/swiper.min.js"></script>
+  <script src="assets/vendors/timepicker/timePicker.js"></script>
+  <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+  <script src="assets/vendors/typed-2.0.11/typed-2.0.11.js"></script>
+  <script src="assets/vendors/vegas/vegas.min.js"></script>
+  <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+  <script src="assets/vendors/wow/wow.js"></script>
+  <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+
+  <!-- Template js -->
+  <script src="assets/js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    // Function to create HTML structure for each blog entry
+    function createBlogElement(blog, index) {
+      const blogElement = document.createElement("div");
+      blogElement.classList.add(
+        "col-xl-4",
+        "col-lg-4",
+        "wow",
+        "animated",
+        "fadeInUp"
+      );
+      blogElement.setAttribute("data-wow-delay", "0.1s");
+
+      blogElement.innerHTML = `
+            <div class="events-style2__single">
+                <div class="events-style2__single-img">
+                    <div class="inner">
+                        <img src="${blog.file}" alt="${blog.title}">
+                    </div>
+                    <div class="date-box">
+                        <p><span class="icon-calendar-1"></span>20-2023</p>
+                    </div>
+                </div>
+                <div class="events-style2__single-content text-center">
+                    <h2>${blog.title}</h2>
+                    <div class="events-style2__single-btn">
+                       
+                            <span class="txt" style="cursor:pointer" data-bs-toggle="collapse" data-bs-target="#collapseExample-${index}" aria-expanded="false" aria-controls="collapseExample">Read More</span>
+                    </div>
+                    <div class="collapse mt-4" id="collapseExample-${index}">
+                        <div class="card card-body bg-transparent border-0 text-secondary">
+                         ${blog.discription}
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mobile-nav__container"></div>
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a>
-                </li>
-            </ul>
-            <div class="mobile-nav__social">
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-facebook-square"></a>
-                <a href="#" class="fab fa-pinterest-p"></a>
-                <a href="#" class="fab fa-instagram"></a>
-            </div>
+        `;
+      return blogElement;
+    }
 
-        </div>
-    </div>
+    // Function to render blogs on the webpage
+    function renderBlogs(blogs) {
+      const blogsContainer = document.getElementById("blogsContainer");
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label>
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-search-1"></i>
-                </button>
-            </form>
-        </div>
-    </div>
+      blogs.forEach((blog, index) => {
+        //   console.log(index);
+        const blogElement = createBlogElement(blog, index);
+        blogsContainer.appendChild(blogElement);
+      });
+    }
 
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-        <i class="icon-down-arrow"></i>
-    </a>
-
-    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
-    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
-    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
-    <script src="assets/vendors/isotope/isotope.js"></script>
-    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/vendors/jquery-migrate/jquery-migrate.min.js"></script>
-    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
-    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/vendors/odometer/odometer.min.js"></script>
-    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendors/parallax/parallax.min.js"></script>
-    <script src="assets/vendors/swiper/swiper.min.js"></script>
-    <script src="assets/vendors/timepicker/timePicker.js"></script>
-    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
-    <script src="assets/vendors/typed-2.0.11/typed-2.0.11.js"></script>
-    <script src="assets/vendors/vegas/vegas.min.js"></script>
-    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/vendors/wow/wow.js"></script>
-    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
-
-    <!-- Template js -->
-    <script src="assets/js/custom.js"></script>
- 
-
+    // Fetch blog data using Axios
+    axios
+      .get("https://hastag-admin-default-rtdb.firebaseio.com/blogs.json", {
+        Authorization: "Bearer J3_0kzz6HPJ1AyB4X4rG9QoZK2h3YnnpYjEgetbibb8", // Replace YOUR_TOKEN with your actual authorization token
+        "Content-Type": "application/json", // Adjust content type if necessary
+      })
+      .then((response) => {
+        const blogs = Object.values(response.data); // Assuming the API returns an array of blog objects
+        renderBlogs(blogs);
+      })
+      .catch((error) => {
+        console.error("Error fetching blog data:", error);
+      });
+  </script>
 </body>
 
-
 <!-- Mirrored from mehedi.asiandevelopers.com/govarnex-demo/index-2-one-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2023 16:34:44 GMT -->
+
 </html>
