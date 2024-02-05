@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-     
+
 
     <!-- fonts -->
     <link
@@ -48,13 +49,34 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
+    <style>
+        .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+
+        .arrow span {
+            display: block;
+            width: 1.5vw;
+            height: 1.5vw;
+            border-bottom: 5px solid #eb292cdb;
+            border-right: 5px solid #eb292cd0;
+            transform: rotate(45deg);
+            margin: -10px;
+        }
+    </style>
+
 </head>
 
 
 <body>
 
-   <!-- Start Preloader -->
-    <div class="loader-wrap">
+    <!-- Start Preloader -->
+    <!-- <div class="loader-wrap">
         <div class="preloader">
             <div class="preloader-close">x</div>
             <div id="handle-preloader" class="handle-preloader">
@@ -104,22 +126,21 @@
                         <span data-text-preloader="N" class="letters-loading">
                             N
                         </span>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Preloader -->
 
 
 
     <div class="page-wrapper">
 
-     <!--Start Main Header One-->
         <header class="main-header main-header-one main-header-one--two">
-            <!--Start Main Header One Top-->
-            <div class="main-header-one--two__top">
+            <!-- Start Main Header One Top -->
+            <!--   <div class="main-header-one--two__top">
                 <div class="auto-container">
                     <div class="main-header-one--two__top-inner">
                         <div class="main-header-one--two__top-left">
@@ -129,7 +150,7 @@
                                         <span class="icon-mail-1"></span>
                                     </div>
                                     <div class="text">
-                                        <p><a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a></p>
+                                        <p><a href="mailto:yourmail@email.com">info@example.com</a></p>
                                     </div>
                                 </li>
 
@@ -148,37 +169,42 @@
                                 <li><a href="#"><span class="icon-instagram"></span></a></li>
                             </ul>
 
-                             
+                            <div class="main-header-one--two__top-left-search">
+                                <a href="#" class="main-menu__search search-toggler icon-search">
+                                </a>
+                            </div>
                         </div>
 
                         <div class="main-header-one--two__top-right">
                             <a class="btn-one" href="#">
-                                <span class="txt">Contact Us</span>
+                                <span class="txt">Report an Issues</span>
                             </a>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <!--End Main Header One Top-->
+            End Main Header One Top-->
 
             <!--Start Main Header One Bottom-->
             <div class="main-header-one__bottom">
-
                 <nav class="main-menu main-menu-one main-menu-one--two">
                     <div class="main-menu__wrapper clearfix">
                         <div class="auto-container">
                             <div class="main-menu__wrapper-inner">
-
                                 <div class="main-header-one__bottom-left">
                                     <div class="logo-box-one">
-                                        <a href="index-2.html">
-                                            <span>#</span> 
+                                        <a href="index.html">
+                                            <span>
+                                                <div class="arrow">
+                                                    <span></span>
+                                                </div>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="main-header-one__bottom-right">
+                                <!-- <div class="main-header-one__bottom-right">
                                     <div class="main-menu-box">
                                         <a href="#" class="mobile-nav__toggler">
                                             <i class="fa fa-bars"></i>
@@ -197,37 +223,36 @@
                                             <li class="scrollToLink">
                                                 <a href="#Solution">Solution</a>
                                             </li>
-                                            
+
                                             <li class="scrollToLink">
                                                 <a href="blog-grid.html">Blog</a>
                                             </li>
                                             <li class="scrollToLink">
-                                                <a href="#team">Contact Us</a>
+                                                <a href="#Contact">Contact Us</a>
                                             </li>
-                                       <!--      <li class="dropdown">
-                                                <a href="#">Pages</a>
-                                                <ul>
-                                                    <li><a href="index-2.html">Home Page 01</a></li>
-                                                    <li><a href="index-3.html">Home Page 02</a></li>
-                                                    <li><a href="index-4.html">Home Page 03</a></li>
-                                                    <li><a href="index-dark.html">Home Dark</a></li>
-                                                </ul>
-                                            </li> -->
+                                       <li class="dropdown">
+                                                        <a href="#">Pages</a>
+                                                        <ul>
+                                                            <li><a href="index-2.html">Home Page 01</a></li>
+                                                            <li><a href="index-3.html">Home Page 02</a></li>
+                                                            <li><a href="index-4.html">Home Page 03</a></li>
+                                                            <li><a href="index-dark.html">Home Dark</a></li>
+                                                        </ul>
+                                                    </li> 
                                         </ul>
-
                                     </div>
 
-                                <!--     <div class="main-header-one__bottom-right-number">
-                                        <div class="icon">
-                                            <span class="icon-headphones"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Call Anytime</p>
-                                            <a href="tel:3336660000">333 666 0000</a>
-                                        </div>
-                                    </div>
- -->
-                                </div>
+                                        <div class="main-header-one__bottom-right-number">
+                                                <div class="icon">
+                                                    <span class="icon-headphones"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <p>Call Anytime</p>
+                                                    <a href="tel:3336660000">333 666 0000</a>
+                                                </div>
+                                            </div>
+         
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -236,7 +261,6 @@
             <!--End Main Header One Bottom-->
 
         </header>
-        <!--End Main Header One-->
 
         <div class="stricky-header stricked-menu main-menu main-menu-one--two">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -278,559 +302,17 @@
         <!--Start Blog Style1-->
         <section class="blog-style1 blog-style1--style3 blog-grid">
             <div class="auto-container">
-                <div class="row">
+                <div class="row" id="blogsContainer">
                     <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-1.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Self-Guided Driving & Tours Walk Of Greater City</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-2.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Assistance For Homes And Properties Real Estate</a></h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-3.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Long-Term Vision Of Health & Attractive Facility</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-4.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Self-Guided Driving & Tours Walk Of Greater City</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-5.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Assistance For Homes And Properties Real Estate</a></h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-6.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Long-Term Vision Of Health & Attractive Facility</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-7.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Self-Guided Driving & Tours Walk Of Greater City</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-8.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Assistance For Homes And Properties Real Estate</a></h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-9.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Long-Term Vision Of Health & Attractive Facility</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-10.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Self-Guided Driving & Tours Walk Of Greater City</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-11.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Assistance For Homes And Properties Real Estate</a></h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog Style1 Single-->
-
-                    <!--Start Blog Style1 Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-style1__single">
-                            <div class="blog-style1__single-img">
-                                <img src="assets/images/blog/blog-v1-12.jpg" alt="#">
-                            </div>
-
-                            <div class="blog-style1__single-content">
-                                <div class="date-box">
-                                    <p> <span class="icon-calendar"></span> Apr 17, 2023</p>
-                                </div>
-                                <h2><a href="blog-details.html">Long-Term Vision Of Health & Attractive Facility</a>
-                                </h2>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Admin</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">0 Comment</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="text">
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit auctor molestie
-                                        eget sociis</p>
-                                </div>
-                                <div class="blog-style1__single-conten-btn">
-                                    <a class="btn-one" href="blog-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- <div class="row" >
+Blog content will be added here 
+                    </div> -->
                     <!--End Blog Style1 Single-->
                 </div>
 
                 <div class="row">
                     <div class="col-xl-12">
-                        <ul class="styled-pagination text-center clearfix">
+                        <!-- <ul class="styled-pagination text-center clearfix">
                             <li class="arrow prev"><a href="#"><span class="icon-left-arrow-1"></span></a>
                             </li>
                             <li class="active"><a href="#">1</a></li>
@@ -838,7 +320,7 @@
                             <li><a href="#">3</a></li>
                             <li class="arrow next"><a href="#"><span class="icon-next"></span></a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
 
@@ -846,12 +328,12 @@
         </section>
         <!--End Blog Style1-->
 
- 
+
 
         <!--Start footer area -->
         <footer class="footer-area">
             <div class="footer-area__shape1">
-                <img src="assets/images/shapes/footer-v1-shape1.png" alt="#">
+                <img src="assets/images/shapes/footer-v1-shape1.png" alt="#" />
             </div>
             <!--Start Footer-->
             <div class="footer">
@@ -862,11 +344,11 @@
                             <div class="single-footer-widget">
                                 <div class="our-company-info">
                                     <div class="footer-logo-style1">
-                                            <div class="title">HasTag Solution</div>
+                                        <div class="title">HasTag Solution</div>
                                     </div>
 
                                     <ul class="our-company-info__social-link">
-                                        <div class="title mb-3">Social link</div>
+                                        <!-- <div class="title mb-3">Social link</div> -->
                                         <li>
                                             <a href="#"><span class="icon-facebook-app-symbol"></span></a>
                                         </li>
@@ -882,20 +364,18 @@
                         </div>
                         <!--End single footer widget-->
 
-
                         <!--Start single footer widget-->
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
                             <div class="single-footer-widget single-footer-widget--explore">
                                 <div class="title">
-                                    <h3>Solutions</h3>
+                                    <h3>Services</h3>
                                 </div>
                                 <div class="footer-widget-links">
                                     <ul>
-                                        <li><a href="#">E-commerce solution</a></li>
-                                        <li><a href="#">Government & Elections</a></li>
-                                        <li><a href="#">Real Estate & Buildings</a></li>
-                                        <li><a href="#">Health & Medical</a></li>
-                                        <li><a href="#">Trasport & Traffic</a></li>
+                                        <li><a href="#">Web Development</a></li>
+                                        <li><a href="#">App Development</a></li>
+                                        <li><a href="#">Digital Marketing</a></li>
+                                        <li><a href="#">SEO</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -906,15 +386,15 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
                             <div class="single-footer-widget single-footer-widget--links">
                                 <div class="title">
-                                    <h3>Usefull Links</h3>
+                                    <h3>Explore</h3>
                                 </div>
                                 <div class="footer-widget-links">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="blog-grid.html">Blog</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="#Solution">Services</a></li>
+                                        <li><a href="#Blog">Blog</a></li>
+                                        <li><a href="#Contact">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -928,9 +408,6 @@
                                     <h3>Contact</h3>
                                 </div>
                                 <div class="footer-widget--contact-info">
-                                    <div class="footer-widget--contact-info-text">
-                                        <p>Tortor neque sed tellus est eget dui id ante tristique tristique dolor.</p>
-                                    </div>
                                     <ul>
                                         <li>
                                             <div class="icon">
@@ -946,18 +423,21 @@
                                                 <span class="icon-mail-1"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a></p>
+                                                <p>
+                                                    <a
+                                                        href="mailto:info.hastagsolutions@email.com">info.hastagsolutions@email.com</a>
+                                                </p>
                                             </div>
                                         </li>
 
-                                        <!-- <li>
+                                        <li>
                                             <div class="icon">
                                                 <span class="icon-telephone"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="tel:3336660000">333 666 0000</a></p>
+                                                <p><a href="https://wa.me/9724740340">+91 9724740340</a></p>
                                             </div>
-                                        </li> -->
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -968,16 +448,15 @@
             </div>
             <!--End Footer-->
 
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="bottom-inner text-center">
-                        <div class="copyright">
-                            <p>Copyright 2023 by <a href="#">Hastag Solution</a> All Right Reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <!--  <div class="footer-bottom">
+                      <div class="container">
+                          <div class="bottom-inner text-center">
+                              <div class="copyright">
+                                  <p>Copyright 2023 by <a href="#">Hastag Solution</a> All Right Reserved.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
         </footer>
         <!--End footer area-->
 
@@ -1065,7 +544,97 @@
 
     <!-- Template js -->
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Function to create HTML structure for each blog entry
+        function createBlogElement(blog, index, keys) {
+            const blogElement = document.createElement("div");
+            blogElement.classList.add(
+                "col-xl-4",
+                "col-lg-4",
+                "wow",
+                "fadeInUp"
+            );
+            blogElement.setAttribute("data-wow-delay", ".3s");
+
+            blogElement.innerHTML = `
+                        <div class="blog-style1__single">
+                            <div class="blog-style1__single-img">
+                                <img src="${blog.file}" alt="${blog.title}">
+                            </div>
+
+                            <div class="blog-style1__single-content">
+                                <div class="date-box">
+                                    <p><span class="icon-calendar"></span> Apr 17, 2023</p>
+                                </div>
+                                <h2><a href="blog-details.html">${blog.title}</a>
+                                </h2>
+                                <ul class="meta-box">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-user"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="#">Admin</a></p>
+                                        </div>
+                                    </li>
+
+                                    
+                                </ul>
+                                <div class="text">
+                                    <p>${blog.discription}</p>
+                                </div>
+                                <div class="blog-style1__single-conten-btn">
+                                    <a class="btn-one" href="blog-details.html?blog=${keys[index]}">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+               
+            `;
+            return blogElement;
+        }
+
+        // Function to render blogs on the webpage
+        function renderBlogs(blogs, keys) {
+            const blogsContainer = document.getElementById("blogsContainer");
+
+            blogs.forEach((blog, index) => {
+                console.log(index);
+                const blogElement = createBlogElement(blog, index, keys);
+                blogsContainer.appendChild(blogElement);
+            });
+        }
+
+        // Fetch blog data using Axios
+        axios
+            .get("https://hastag-admin-default-rtdb.firebaseio.com/blogs.json", {
+                Authorization: "Bearer J3_0kzz6HPJ1AyB4X4rG9QoZK2h3YnnpYjEgetbibb8", // Replace YOUR_TOKEN with your actual authorization token
+                "Content-Type": "application/json", // Adjust content type if necessary
+            })
+            .then((response) => {
+                const blogs = Object.values(response.data); // Assuming the API returns an array of blog objects
+                renderBlogs(blogs, Object.keys(response.data));
+
+            })
+            .catch((error) => {
+                console.error("Error fetching blog data:", error);
+            });
+    </script>
+
+
 
 
 </body>
+
 </html>
+
+<!-- <li>
+    <div class="icon">
+        <span class="icon-comment"></span>
+    </div>
+    <div class="text">
+        <p><a href="#">0 Comment</a></p>
+    </div>
+</li> -->

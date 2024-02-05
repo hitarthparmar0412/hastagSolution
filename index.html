@@ -45,9 +45,11 @@
   <link rel="stylesheet" href="assets/css/module-css/08-blog-section.css" />
   <!-- template styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="assets/css/contact.css" /> -->
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 
 <body>
@@ -167,7 +169,7 @@
                       </li>
 
                       <li class="scrollToLink">
-                        <a href="blog-grid.html">Blog</a>
+                        <a href="#Blog">Blog</a>
                       </li>
                       <li class="scrollToLink">
                         <a href="#Contact">Contact Us</a>
@@ -328,7 +330,7 @@
             <!--Start Features Style1 Single-->
             <li class="features-style2__single text-center">
               <div class="features-style2__single-icon">
-                <span class="icon-Group-3"></span>
+                <img src="./assets/images/icons/coding.png" style="max-width: 60%;margin-top: 1rem;" />
               </div>
 
               <div class="features-style2__single-content">
@@ -344,7 +346,7 @@
             <!--Start Features Style1 Single-->
             <li class="features-style2__single text-center">
               <div class="features-style2__single-icon">
-                <span class="icon-Group-1"></span>
+                <img src="./assets/images/icons/mobile-development.png" style="max-width: 60%;margin-top: 1rem;" />
               </div>
 
               <div class="features-style2__single-content">
@@ -363,7 +365,8 @@
             <!--Start Features Style1 Single-->
             <li class="features-style2__single text-center">
               <div class="features-style2__single-icon">
-                <span class="icon-Group-2"></span>
+                <!-- <span class="icon-minus"></span> -->
+                <img src="./assets/images/icons/content.png" style="max-width: 60%;margin-top: 1rem;" />
               </div>
 
               <div class="features-style2__single-content">
@@ -381,7 +384,7 @@
             <!--Start Features Style1 Single-->
             <li class="features-style2__single text-center">
               <div class="features-style2__single-icon">
-                <span class="icon-Group-4"></span>
+                <img src="./assets/images/icons/searching.png" style="max-width: 60%;margin-top: 1rem;" />
               </div>
 
               <div class="features-style2__single-content">
@@ -728,10 +731,15 @@
           <div class="sub-title">
             <h6>Blog</h6>
           </div>
-          <h2>HasTag Blog</h2>
+          <h2>Top 10 Blogs</h2>
         </div>
         <div class="row" id="blogsContainer">
           <!-- Blog content will be added here -->
+        </div>
+        <div class="button-box text-center">
+          <button class="btn-one" type="button" onclick="window.location.href='blog-grid.html'">
+            <span class="txt">View All</span>
+          </button>
         </div>
         <!-- <div class="row">
                     Start Events Style2 Single
@@ -770,56 +778,50 @@
       <div class="auto-container">
         <div class="row">
           <!--Start Instant Services Style1 Img-->
-          <div class="col-xl-4">
-            <div class="instant-services-style1--style2__title">
-              <div class="sec-title">
-                <div class="sub-title">
-                  <h6>Contact
-                  </h6>
-                </div>
-                <h2>
-                  Contact Us
-                </h2></br>
-                <h6>
-                  <div class="footer-widget--contact-info">
-                    <ul>
-                      <li>
-                        <div class="icon">
-                          <span class="icon-mail-1"></span>
-                        </div>
-                        <div class="text">
-                          <p>
-                            <a href="mailto:info.hastagsolutions@email.com"
-                              style="color:#000">info.hastagsolutions@email.com</a>
-                          </p>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class=" icon">
-                          <span class="icon-telephone"></span>
-                        </div>
-                        <div class="text">
-                          <p><a aria-label="Chat on WhatsApp" href="https://wa.me/9724740340" style="color:#000"> +91
-                              9724740340
-                            </a></p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </h6>
-              </div>
-            </div>
-          </div>
           <!--End Instant Services Style1 Img-->
 
           <!--Start Instant Services Style1 Content-->
-          <div class="col-xl-8">
+          <!-- conact us form fluid start -->
+          <!-- <div class="rts-contact-form-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="rts-contact-fluid rts-section-gap">
+                      <div class="rts-title-area contact-fluid text-center mb--50">
+                          <p class="pre-title">
+                              Get In Touch
+                          </p>
+                          <h2 class="title">Needs Help? Let’s Get in Touch</h2>
+                      </div>
+                      <div class="form-wrapper">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+          <!-- conact us form fluid end -->
+          <div class="col-xl-12">
             <div class="instant-services-style1__content">
               <div class="shape2 float-bob-y">
                 <img src="assets/images/shapes/instant-services-v2-shape1.png" alt="#" />
               </div>
               <div class="instant-services-style1__content-bottom">
+                <div style="width: 100%;">
+                  <div class="sec-title" style="text-align: center;">
+                    <div class="sub-title">
+                      <h6>
+                        Get In Touch
+                      </h6>
+                    </div>
+                    <h2>
+
+
+                      Needs Help? Let’s Get in Touch
+
+                    </h2></br>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-xl-12 col-lg-12 col-md-12">
                     <div class="instant-services-style1__content-bottom-single">
@@ -830,35 +832,43 @@
                               <div class="row">
                                 <div class="col-md-6">
                                   <div class="input-box">
-                                    <input type="text" name="fname" value="" placeholder="Your name" required="">
-                                    <p class="error-message" id="fname-error" style="color:#EB292C;"></p>
+                                    <input type="text" name="fname" value="" placeholder="Your name">
+                                    <p id="fname-error" style="color:#EB292C"></p>
+                                  </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-box">
+                                    <input type="text" name="mnumber" value="" placeholder="Your Number">
+                                    <p id="mnumber-error" style="color:#EB292C"></p>
                                   </div>
                                 </div>
                                 <div class="col-md-6">
                                   <div class="input-box">
-                                    <input type="text" name="mnumber" value="" placeholder="Your Number" required="">
-                                    <p class="error-message" id="mnumber-error" style="color:#EB292C;"></p>
+                                    <input type="email" name="femail" value="" placeholder="Your email">
+                                    <p class="error-message" id="femail-error" style="color:#EB292C;"></p>
+                                    <p id="femail-error" style="color:#EB292C"></p>
                                   </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                   <div class="input-box">
-                                    <input type="email" name="femail" value="" placeholder="Your email" required="">
-                                    <p class="error-message" id="femail-error" style="color:#EB292C;"></p>
+                                    <input type="text" name="fsubject" value="" placeholder="Your Subject">
+                                    <p id="fsubject-error" style="color:#EB292C"></p>
                                   </div>
                                 </div>
                                 <div class="col-xl-12">
                                   <div class="row">
                                     <div class="col-xl-12">
                                       <div class="input-box">
-                                        <textarea name="fcomments" placeholder="Type message" required=""></textarea>
-                                        <p class="error-message" id="fcomments-error" style="color:#EB292C;"></p>
+                                        <textarea name="fcomments" placeholder="Type message"></textarea>
+                                        <p id="fcomments-error" style="color:#EB292C"></p>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div class="button-box">
-                                        <button class="btn-one" type="submit" onclick="validateForm(event)">
+                                        <button class="btn-one" type="button" onclick="validateForm()">
                                           <span class="txt">Send</span>
                                         </button>
                                       </div>
@@ -882,15 +892,22 @@
         </div>
       </div>
     </section>
+
+    <div id="toast">
+      <!-- <div id="img">Icon</div> -->
+      <div id="desc">Your content massage send successfully</div>
+    </div>
     <!--End Instant Services Style1-->
     <script>
       function validateForm(event) {
-        event.preventDefault(); // Prevents the default form submission
+        // event.preventDefault(); // Prevents the default form submission
 
         // Fetch form elements
         const fname = document.querySelector('input[name="fname"]');
         const mnumber = document.querySelector('input[name="mnumber"]');
         const femail = document.querySelector('input[name="femail"]');
+        const fsubject = document.querySelector('input[name="fsubject"]');
+
         const fcomments = document.querySelector('textarea[name="fcomments"]');
 
         // Reset previous error styles
@@ -917,7 +934,6 @@
           document.getElementById('mnumber-error').innerText = 'Please enter your number';
           mnumber.style.border = '2px solid #EB292C';
 
-
         }
         else if (!isValidMobileNumber(mnumber.value.trim())) {
           mnumber.classList.add('error');
@@ -925,7 +941,12 @@
           mnumber.style.border = '2px solid #EB292C';
 
         }
+        if (fsubject.value.trim() === '') {
+          fsubject.classList.add('error');
+          document.getElementById('fsubject-error').innerText = 'Please enter your subject';
+          fsubject.style.border = '2px solid #EB292C';
 
+        }
         if (femail.value.trim() === '') {
           femail.classList.add('error');
           document.getElementById('femail-error').innerText = 'Please enter your email';
@@ -955,17 +976,20 @@
         //console.log('Number:', mnumber.value);
         //console.log('Email:', femail.value);
         //console.log('Comments:', fcomments.value);
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "dgadhiya412@rku.ac.in",
-          Password: 'R789s73""""""',
-          To: 'dharmikgadhia52525@gmail.com',
-          From: "dgadhiya412@rku.ac.in",
-          Subject: "This is the subject",
-          Body: "And this is the body"
-        }).then(
-          message => alert(message)
-        );
+        axios
+          .post("https://hastag-admin-default-rtdb.firebaseio.com/contacts.json",
+            data
+
+          )
+          .then((response) => {
+            if (response.status === 200) {
+              launch_toast()
+            }
+
+          })
+          .catch((error) => {
+            console.error("Error fetching blog data:", error);
+          });
 
         // You can submit the form here if needed:
         // document.getElementById('add-comment-form').submit();
@@ -974,6 +998,12 @@
         // Regular expression for mobile number validation
         const mobileNumberPattern = /^[0-9]{10}$/; // Modify this pattern according to your country's mobile number format
         return mobileNumberPattern.test(number);
+      }
+
+      function launch_toast() {
+        var x = document.getElementById("toast")
+        x.className = "show";
+        setTimeout(function () { x.className = x.className.replace("show", ""); }, 5000);
       }
     </script>
 
@@ -1040,11 +1070,11 @@
                 </div>
                 <div class="footer-widget-links">
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="blog-grid.html">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#Solution">Services</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -1079,14 +1109,14 @@
                       </div>
                     </li>
 
-                    <!-- <li>
-                                            <div class="icon">
-                                                <span class="icon-telephone"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p><a href="tel:3336660000">333 666 0000</a></p>
-                                            </div>
-                                        </li> -->
+                    <li>
+                      <div class="icon">
+                        <span class="icon-telephone"></span>
+                      </div>
+                      <div class="text">
+                        <p><a href="https://wa.me/9724740340">+91 9724740340</a></p>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -1118,7 +1148,7 @@
         <i class="icon-plus"></i>
       </span>
       <div class="logo-box">
-        <a href="index-2.html" aria-label="logo image"> # </a>
+        <a href="index.html" aria-label="logo image"> # </a>
       </div>
       <div class="mobile-nav__container"></div>
       <ul class="mobile-nav__contact list-unstyled">
@@ -1210,14 +1240,18 @@
                 <div class="events-style2__single-content text-center">
                     <h2>${blog.title}</h2>
                     <div class="events-style2__single-btn">
-                       
-                            <span class="txt" style="cursor:pointer" data-bs-toggle="collapse" data-bs-target="#collapseExample-${index}" aria-expanded="false" aria-controls="collapseExample">Read More</span>
-                    </div>
-                    <div class="collapse mt-4" id="collapseExample-${index}">
-                        <div class="card card-body bg-transparent border-0 text-secondary">
+                      <div class="collapse mt-4" id="collapseExample-${index}">
+                        <div class="card card-body bg-transparent border-0 text-light">
                          ${blog.discription}
                         </div>
                     </div>
+                            <div class="button-box text-center mt-4">
+          <button class="btn-one" class="txt" style="cursor:pointer" data-bs-toggle="collapse" data-bs-target="#collapseExample-${index}" aria-expanded="false" aria-controls="collapseExample" type="button">
+            <span class="txt">Read More</span>
+          </button>
+        </div>
+                    </div>
+                    
                 </div>
             </div>
         `;
@@ -1242,7 +1276,7 @@
         "Content-Type": "application/json", // Adjust content type if necessary
       })
       .then((response) => {
-        const blogs = Object.values(response.data); // Assuming the API returns an array of blog objects
+        const blogs = Object.values(response.data)?.filter((ele, index) => index <= 2); // Assuming the API returns an array of blog objects
         renderBlogs(blogs);
       })
       .catch((error) => {
