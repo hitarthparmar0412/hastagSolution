@@ -347,29 +347,23 @@
 
         <!--Start Blog Style1-->
         <section class="blog-style1 blog-style1--style3 blog-grid">
-            <div class="auto-container">
-                <div class="row" id="blogsContainer">
-                    <!--Start Blog Style1 Single-->
-                    <!-- <div class="row" >
-Blog content will be added here 
-                    </div> -->
-                    <!--End Blog Style1 Single-->
-                </div>
-
+            <div class="auto-container" id="loader">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <!-- <ul class="styled-pagination text-center clearfix">
-                            <li class="arrow prev"><a href="#"><span class="icon-left-arrow-1"></span></a>
-                            </li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="arrow next"><a href="#"><span class="icon-next"></span></a>
-                            </li>
-                        </ul> -->
+                    <div class="col-xl-4">
+                        <span class="loader"></span>
+                    </div>
+                    <div class="col-xl-4">
+                        <span class="loader"></span>
+                    </div>
+                    <div class="col-xl-4">
+                        <span class="loader"></span>
                     </div>
                 </div>
 
+            </div>
+            <div class="auto-container">
+                <div class="row" id="blogsContainer">
+                </div>
             </div>
         </section>
         <!--End Blog Style1-->
@@ -597,7 +591,6 @@ Blog content will be added here
             const blogElement = document.createElement("div");
             blogElement.classList.add(
                 "col-xl-4",
-                "col-lg-4",
                 "wow",
                 "fadeInUp"
             );
@@ -605,8 +598,8 @@ Blog content will be added here
 
             blogElement.innerHTML = `
                         <div class="blog-style1__single">
-                            <div class="blog-style1__single-img" style='    '>
-                                <img src="${blog.file}" alt="${blog.title}">
+                            <div class="blog-style1__single-img">
+                                <img src="${blog.file}" alt="${blog.title}" style='heigth:300px'>
                             </div>
 
                             <div class="blog-style1__single-content">
@@ -652,7 +645,7 @@ Blog content will be added here
                 blogsContainer.appendChild(blogElement);
             });
         }
-
+        $('#loader').show()
         // Fetch blog data using Axios
         axios
             .get("https://hastag-admin-default-rtdb.firebaseio.com/blogs.json", {
@@ -660,9 +653,9 @@ Blog content will be added here
                 "Content-Type": "application/json", // Adjust content type if necessary
             })
             .then((response) => {
+                document.getElementById('loader').style.display = "none";
                 const blogs = Object.values(response.data); // Assuming the API returns an array of blog objects
                 renderBlogs(blogs, Object.keys(response.data));
-
             })
             .catch((error) => {
                 console.error("Error fetching blog data:", error);
